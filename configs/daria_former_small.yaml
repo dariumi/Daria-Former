@@ -1,0 +1,27 @@
+# Daria-Former Small (~125M params)
+vocab_size: 32000
+hidden_dim: 768
+num_layers: 12
+num_heads: 12
+head_dim: 64
+max_seq_len: 8192
+rope_base: 10000.0
+rope_scaling_factor: 1.0
+sliding_window_size: 1024
+num_global_tokens: 64
+ffn_activation: swiglu
+working_memory_slots: 512
+episodic_memory_slots: 256
+persistent_memory_slots: 128
+persona_memory_slots: 64
+memory_top_k: 32
+emotion_dim: 64
+emotion_categories: 8
+persona_dim: 64
+lora_rank: 0
+dropout: 0.0
+attention_dropout: 0.0
+weight_tying: true
+gradient_checkpointing: false
+image_enabled: false
+audio_enabled: false

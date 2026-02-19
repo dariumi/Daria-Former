@@ -1,0 +1,27 @@
+# Daria-Former Base (~350M params)
+vocab_size: 32000
+hidden_dim: 1024
+num_layers: 24
+num_heads: 16
+head_dim: 64
+max_seq_len: 16384
+rope_base: 10000.0
+rope_scaling_factor: 1.0
+sliding_window_size: 2048
+num_global_tokens: 128
+ffn_activation: swiglu
+working_memory_slots: 1024
+episodic_memory_slots: 512
+persistent_memory_slots: 256
+persona_memory_slots: 128
+memory_top_k: 64
+emotion_dim: 128
+emotion_categories: 16
+persona_dim: 128
+lora_rank: 0
+dropout: 0.0
+attention_dropout: 0.0
+weight_tying: true
+gradient_checkpointing: true
+image_enabled: false
+audio_enabled: false

@@ -1,0 +1,39 @@
+# Daria-Former Large (~1.3B params)
+vocab_size: 32000
+hidden_dim: 2048
+num_layers: 24
+num_heads: 32
+head_dim: 64
+max_seq_len: 32768
+rope_base: 10000.0
+rope_scaling_factor: 2.0
+sliding_window_size: 4096
+num_global_tokens: 256
+ffn_activation: swiglu
+working_memory_slots: 2048
+episodic_memory_slots: 1024
+persistent_memory_slots: 512
+persona_memory_slots: 256
+memory_top_k: 128
+emotion_dim: 256
+emotion_categories: 32
+persona_dim: 256
+lora_rank: 16
+lora_alpha: 32.0
+lora_targets:
+  - q_proj
+  - k_proj
+  - v_proj
+  - o_proj
+  - gate_proj
+  - up_proj
+  - down_proj
+dropout: 0.0
+attention_dropout: 0.0
+weight_tying: false
+gradient_checkpointing: true
+image_enabled: true
+image_size: 336
+image_patch_size: 14
+audio_enabled: true
+audio_n_mels: 128
